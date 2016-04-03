@@ -88,7 +88,7 @@ A new token is issued after each request.
 ## P5: Linux Server Configuration
 The site is accessible via:
 
-1.  [AWS-EC2]('http://ec2-52-36-126-192.us-west-2.compute.amazonaws.com/')
-2.  [Server IP]('http://52.36.126.192/')
+1.  [AWS-EC2](http://ec2-52-36-126-192.us-west-2.compute.amazonaws.com/)
+2.  [Server IP](http://52.36.126.192/)
 
 >Note: You must login to access more information from the site.
