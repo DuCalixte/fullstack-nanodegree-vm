@@ -26,5 +26,4 @@ elif args.with_no_data:
 if args.with_data is not True and args.with_no_data is not True and args.clean is not True:
     if __name__ == '__main__':
         app.run(host='0.0.0.0', port=args.port)
-        #app.run(host='52.36.126.192', port=args.port)
         app.run(debug=True)
