@@ -1,11 +1,11 @@
 'use strict';
 
-define(['LoadDataService', 'DataBroadcastService'], function(LoadDataService, DataBroadcastService) {
+define(['LoadDataService', 'DataBroadcastService', 'DomainUrlProvider'], function(LoadDataService, DataBroadcastService, DomainUrlProvider) {
   return ['$scope', 'LoadDataService', 'DataBroadcastService',
-    function($scope, LoadDataService, DataBroadcastService) {
+    function($scope, LoadDataService, DataBroadcastService, DomainUrlProvider) {
       $scope.categories = [];
       $scope.items = [];
-      $scope.url = "http://52.36.126.192/category/json";
+      $scope.url = DomainUrlProvider.url.concat('/category/json');
       $scope.selected = undefined;
       $scope.my_index = undefined;
       $scope.all_index = undefined;

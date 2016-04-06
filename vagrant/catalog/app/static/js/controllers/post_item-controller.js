@@ -1,11 +1,11 @@
 'use strict';
 
-define(['LoadDataService'], function(LoadDataService) {
-  return ['$scope', '$rootScope', '$uibModal', 'LoadDataService',
-    function($scope, $rootScope, $uibModal, LoadDataService) {
+define(['LoadDataService'], function(LoadDataService, DomainUrlProvider) {
+  return ['$scope', '$rootScope', '$uibModal', 'LoadDataService', 'DomainUrlProvider',
+    function($scope, $rootScope, $uibModal, LoadDataService, DomainUrlProvider) {
       var self = this;
 
-      self.category_url = "http://52.36.126.192/category/json";
+      self.category_url = DomainUrlProvider.url.concat('/category/json');
       self.categories = [];
       self.loadCategories = function() {
         var url = category_url;

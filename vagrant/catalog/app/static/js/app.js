@@ -11,6 +11,7 @@ define([
     'googleplus',
     'googlePlusSignin',
     'Facebook',
+    'DomainUrlProvider'
     'LoadDataService',
     'DataBroadcastService',
     'PostDataService',
@@ -47,6 +48,7 @@ define([
     googleplus,
     googlePlusSignin,
     Facebook,
+    DomainUrlProvider,
     LoadDataService,
     DataBroadcastService,
     PostDataService,
@@ -74,6 +76,7 @@ define([
 
     var app = angular.module('CatalogApp', ['ui.bootstrap', 'googleplus','directive.g+signin', 'ezfb']);
 
+    app.provider('DomainUrlProvider', DomainUrlProvider);
     app.factory('LoadDataService', LoadDataService);
     app.factory('DataBroadcastService', DataBroadcastService);
     app.factory('PostDataService', PostDataService);

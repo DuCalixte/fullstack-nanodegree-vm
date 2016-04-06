@@ -1,13 +1,13 @@
 'use strict';
 
 define([], function() {
-    return ['$http', '$q', function($http, $q) {
+    return ['$http', '$q', 'DomainUrlProvider', function($http, $q, DomainUrlProvider) {
         var service = {}
 
         service.loadCategories = function() {
             var request = $http({
                 method: 'get',
-                url: 'http://52.36.126.192/category/json',
+                url: DomainUrlProvider.url.concat('/category/json'),
                 params: {
                     action: 'get'
                 }

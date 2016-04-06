@@ -17,6 +17,7 @@ requirejs.config({
     'googlePlusSignin': "vendors/angular-directive.g-signin/google-plus-signin",
     'Facebook': "vendors/angular-easyfb/src/angular-easyfb",
     app: "js/app",
+    DomainUrlProvider: "js/providers/domain_url-provider",
     SignoutController: "js/controllers/signout-controller",
     SignoutDirective: "js/directives/signout-directive",
     SigninController: "js/controllers/signin-controller",

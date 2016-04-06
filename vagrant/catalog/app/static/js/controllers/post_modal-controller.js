@@ -4,9 +4,9 @@ define(['LoadDataService', 'PostDataService', 'AuthenticationService'], function
   return ['$scope', '$uibModalInstance', 'item', 'data', 'LoadDataService', 'PostDataService', 'AuthenticationService',
     function($scope, $uibModalInstance, item, data, LoadDataService, PostDataService, AuthenticationService) {
       $scope.image_url = "http://52.36.126.192/images/json/";
-      $scope.category_url = "http://52.36.126.192/category/json";
-      $scope.edit_url = "http://52.36.126.192/item/edit/";
-      $scope.add_new_url = "http://52.36.126.192/item/new";
+      $scope.category_url = DomainUrlProvider.url.concat('/category/json');
+      $scope.edit_url = DomainUrlProvider.url.concat('/item/edit/');
+      $scope.add_new_url = DomainUrlProvider.url.concat('/item/new');
       $scope.slideInterval = 0;
       $scope.noWrapSlides = true;
       $scope.prefix = "static/";

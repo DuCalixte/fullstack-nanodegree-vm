@@ -60,10 +60,11 @@ A new token is issued after each request.
 
 **Setup the environment:**
 
-1. `pg_config.sh`
+1. `pip install -r requirements.txt`
+  * You make record new requirements with `pip freeze > requirements.txt`
 2. `sudo npm install bower -g`
-3. `virtualenv app`
-4. `. app/bin/activate`
+3. `virtualenv venv`
+4. `. venv/bin/activate`
 5. `bower install --save`
 > 	* You may need to select best version based on conflicts (always choose app).
 
@@ -84,4 +85,10 @@ A new token is issued after each request.
 3. `python application.py`
 
 
+## P5: Linux Server Configuration
+The site is accessible via:
 
+1.  [AWS-EC2](http://ec2-52-36-126-192.us-west-2.compute.amazonaws.com/)
+2.  [Server IP](http://52.36.126.192/)
+
+>Note: You must login to access more information from the site.

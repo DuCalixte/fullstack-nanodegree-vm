@@ -1,14 +1,14 @@
 'use strict';
 
-define(['LoadDataService', 'DataBroadcastService'], function(LoadDataService, DataBroadcastService) {
-  return ['$scope', '$uibModal', 'LoadDataService', 'DataBroadcastService',
-    function($scope, $uibModal, LoadDataService, DataBroadcastService) {
+define(['LoadDataService', 'DataBroadcastService', 'DomainUrlProvider'], function(LoadDataService, DataBroadcastService, DomainUrlProvider) {
+  return ['$scope', '$uibModal', 'LoadDataService', 'DataBroadcastService', 'DomainUrlProvider',
+    function($scope, $uibModal, LoadDataService, DataBroadcastService, DomainUrlProvider) {
       var self = this;
       $scope.items = [];
-      $scope.url = "http://52.36.126.192/items/json";
+      $scope.url = DomainUrlProvider.url.concat('/items/json');
       $scope.current_url = "";
       $scope.category = "All Items";
-      $scope.category_url = "http://52.36.126.192/category/json";
+      $scope.category_url = DomainUrlProvider.url.concat('/category/json');
       $scope.use_current_user = false;
       $scope.login_user = undefined;
       $scope.user_id = undefined;
