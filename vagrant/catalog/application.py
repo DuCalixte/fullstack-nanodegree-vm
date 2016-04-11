@@ -26,4 +26,5 @@ elif args.with_no_data:
 if args.with_data is not True and args.with_no_data is not True and args.clean is not True:
     if __name__ == '__main__':
         app.run(host='0.0.0.0', port=args.port)
+	#app.run(host='http://ec2-52-36-126-192.us-west-2.compute.amazonaws.com/', port=args.port)
         app.run(debug=True)

@@ -9,8 +9,8 @@ define([], function() {
       scope: {
         init: '&',
         addNewItem: '&',
-        category: '=',
-        isDisabled: '='
+	category: '@',
+        isDisabled: '@'
       },
       templateUrl: 'static/js/directives/templates/_add_item.html',
       controller: 'AddNewItemController',

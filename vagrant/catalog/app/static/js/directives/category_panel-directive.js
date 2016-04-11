@@ -13,7 +13,7 @@ define([], function() {
                 categories: '@',
                 all_index: '@',
                 my_index: '@',
-                selected: '='
+                selected: '=?bind'
             },
             templateUrl: 'static/js/directives/templates/_show_categories.html',
             controller: 'CategoriesController',

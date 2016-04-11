@@ -4,8 +4,8 @@ define(['PostDataService', 'DataBroadcastService', 'AuthenticationService'], fun
   return ['PostDataService', 'DataBroadcastService', 'AuthenticationService', 'GooglePlus', '$scope', 'ezfb', '$window', '$location', '$q', function(PostDataService, DataBroadcastService, AuthenticationService, GooglePlus, $scope, ezfb, $window, $location, $q) {
     $scope.isDisabled = false;
     $scope.login_status = undefined;
-    $scope.goggle_url = "http://52.36.126.192/glogin";
-    $scope.facebook_url = "http://52.36.126.192/flogin";
+    $scope.goggle_url = "http://ec2-52-36-126-192.us-west-2.compute.amazonaws.com/glogin";
+    $scope.facebook_url = "http://ec2-52-36-126-192.us-west-2.compute.amazonaws.com/flogin";
 
     $scope.init = function() {
       $scope.isDisabled = false;

@@ -11,7 +11,7 @@ define([
     'googleplus',
     'googlePlusSignin',
     'Facebook',
-    'DomainUrlProvider'
+    'DomainUrlProvider',
     'LoadDataService',
     'DataBroadcastService',
     'PostDataService',

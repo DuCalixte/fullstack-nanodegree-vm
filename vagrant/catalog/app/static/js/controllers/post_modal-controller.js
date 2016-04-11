@@ -1,9 +1,9 @@
 'use strict';
 
-define(['LoadDataService', 'PostDataService', 'AuthenticationService'], function(LoadDataService, PostDataService, AuthenticationService) {
-  return ['$scope', '$uibModalInstance', 'item', 'data', 'LoadDataService', 'PostDataService', 'AuthenticationService',
-    function($scope, $uibModalInstance, item, data, LoadDataService, PostDataService, AuthenticationService) {
-      $scope.image_url = "http://52.36.126.192/images/json/";
+define(['LoadDataService', 'PostDataService', 'AuthenticationService', 'DomainUrlProvider'], function(LoadDataService, PostDataService, AuthenticationService, DomainUrlProvider) {
+  return ['$scope', '$uibModalInstance', 'item', 'data', 'LoadDataService', 'PostDataService', 'AuthenticationService', 'DomainUrlProvider',
+    function($scope, $uibModalInstance, item, data, LoadDataService, PostDataService, AuthenticationService, DomainUrlProvider) {
+      $scope.image_url = DomainUrlProvider.url.concat('/images/json/'); //"http://52.36.126.192/images/json/";
       $scope.category_url = DomainUrlProvider.url.concat('/category/json');
       $scope.edit_url = DomainUrlProvider.url.concat('/item/edit/');
       $scope.add_new_url = DomainUrlProvider.url.concat('/item/new');

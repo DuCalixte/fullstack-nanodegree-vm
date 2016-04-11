@@ -5,8 +5,8 @@ define(['PostDataService', 'DataBroadcastService', 'AuthenticationService'], fun
     $scope.isDisabled = true;
     $scope.provider = undefined;
 
-    $scope.google_url = "http://52.36.126.192/glogout";
-    $scope.facebook_url = "http://52.36.126.192/flogout";
+    $scope.google_url = "http://ec2-52-36-126-192.us-west-2.compute.amazonaws.com/glogout";
+    $scope.facebook_url = "http://ec2-52-36-126-192.us-west-2.compute.amazonaws.com/flogout";
 
     $scope.init = function() {
       $scope.isDisabled = true;

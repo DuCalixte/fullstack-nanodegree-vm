@@ -9,4 +9,5 @@ ERROR_401 = 'Unable to process information as requested'
 APP_SECRET_KEY=content['client_secret']
 FACEBOOK_KEY = ''
 SQLALCHEMY_DATABASE_URI = 'postgresql://catalog:passDB@localhost/CatalogDb'
-
+#SERVER_NAME='http://ec2-52-36-126-192.us-west-2.compute.amazonaws.com/'
+#SERVER_NAME='_'

@@ -17,11 +17,13 @@ import jinja2
 import traceback
 from oauth2client.client import flow_from_clientsecrets
 from oauth2client.client import FlowExchangeError
+from flask.ext.cors import CORS
 
 # Loading login session library
 from flask import session as login_session
 
 app = Flask(__name__)
+CORS(app)
 
 app.config.from_pyfile("config.py")
 

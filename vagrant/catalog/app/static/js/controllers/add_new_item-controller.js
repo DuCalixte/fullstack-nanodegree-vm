@@ -19,11 +19,12 @@ define(['LoadDataService', 'DataBroadcastService'], function(LoadDataService, Da
       $scope.url = DomainUrlProvider.url.concat('/category/json');
       $scope.category = "All Items";
       $scope.categories = [];
-      $scope.isDisabled = true;
+      //$scope.isDisabled = true;
 
 
       $scope.init = function() {
         $scope.isDisabled = (DataBroadcastService.login_status.get.id === undefined);
+	//console.log($scope.isDisabled);
         LoadDataService.loadData($scope.url)
           .then(
             function(response) {
@@ -53,6 +54,7 @@ define(['LoadDataService', 'DataBroadcastService'], function(LoadDataService, Da
 
       $scope.$watch('login_status', function(new_value, old_value) {
         if ((new_value !== undefined) && (new_value !== {}) && (new_value !== old_value)) {
+	  console.log('log in status has changed');
           $scope.isDisabled = (new_value.id === undefined);
         }
       }, true);

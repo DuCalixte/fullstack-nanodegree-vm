@@ -1,7 +1,7 @@
 'use strict';
 
 define(['LoadDataService', 'DataBroadcastService', 'DomainUrlProvider'], function(LoadDataService, DataBroadcastService, DomainUrlProvider) {
-  return ['$scope', 'LoadDataService', 'DataBroadcastService',
+  return ['$scope', 'LoadDataService', 'DataBroadcastService', 'DomainUrlProvider',
     function($scope, LoadDataService, DataBroadcastService, DomainUrlProvider) {
       $scope.categories = [];
       $scope.items = [];
